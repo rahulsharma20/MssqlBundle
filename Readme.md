@@ -1,4 +1,4 @@
-This bundle is forked from realestate/mssql-bundle and has added the PDO ODBC functionality.
+### This bundle is forked from realestate/mssql-bundle and has additional PDO ODBC functionality.
 
 Installation
 -------
