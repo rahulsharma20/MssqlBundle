@@ -1,21 +1,22 @@
-DEPRECATED
----
-realestate.co.nz still uses this bundle, but it's in legacy code that is being phased out. The capabilities of the bundle are limited, and have been superseeded by the Doctrine SQLServer support.
-
-If you need a Doctrine DBLib driver, something like https://packagist.org/packages/leaseweb/doctrine-pdo-dblib should work.
-
-If you wish to continue using the library, you may fork it and maintain it yourself. There will be no further development on this bundle moving forward.
-
+This bundle is forked from realestate/mssql-bundle and has added the PDO ODBC functionality.
 
 Installation
 -------
 
 ### Step 1. Install MssqlBundle
-Add the **realestate/mssql-bundle** into **composer.json**
+Add the **rsharma20/mssql-bundle** into **composer.json**
 
+    "repositories": [
+        ...
+        {
+          "type": "vcs",
+          "url": "https://github.com/rsharma20/MssqlBundle"
+        }
+        ...
+    ],
     "require": {
         ....
-        "realestateconz/mssql-bundle": "master-dev"
+        "rsharma20/mssql-bundle": "master-dev"
     },
 
 And run
