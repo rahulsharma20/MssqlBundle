@@ -9,25 +9,25 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Realestate\MssqlBundle;
+namespace Wyzen\MssqlBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Doctrine\DBAL\Types\Type;
 
-class RealestateMssqlBundle extends Bundle
+class WyzenMssqlBundle extends Bundle
 {
     public function boot()
     {
         // Register custom data types
         if(!Type::hasType('uniqueidentifier')) {
-            Type::addType('uniqueidentifier', 'Realestate\MssqlBundle\Types\UniqueidentifierType');
+            Type::addType('uniqueidentifier', 'Wyzen\MssqlBundle\Types\UniqueidentifierType');
         }
         
         if(!Type::hasType('geography')) {
-            Type::addType('geography', 'Realestate\MssqlBundle\Types\PointType');
+            Type::addType('geography', 'Wyzen\MssqlBundle\Types\PointType');
         }
 
-        Type::overrideType('date', 'Realestate\MssqlBundle\Types\DateType');        
-        Type::overrideType('datetime', 'Realestate\MssqlBundle\Types\DateTimeType');
+        Type::overrideType('date', 'Wyzen\MssqlBundle\Types\DateType');        
+        Type::overrideType('datetime', 'Wyzen\MssqlBundle\Types\DateTimeType');
     }
 }
