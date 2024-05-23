@@ -10,7 +10,7 @@ Add the **rsharma20/mssql-bundle** into **composer.json**
         ...
         {
           "type": "vcs",
-          "url": "https://github.com/rsharma20/MssqlBundle"
+          "url": "https://github.com/rahulsharma20/MssqlBundle"
         }
         ...
     ],
