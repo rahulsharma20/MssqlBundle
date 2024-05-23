@@ -49,6 +49,7 @@ doctrine:
             default:
                 driver_class:   Wyzen\MssqlBundle\Driver\PDOOdbc\Driver
                 host:           %database_host%
+                port:           %database_port%
                 dbname:         %database_prefix%%database_name%
                 user:           %database_user%
                 password:       %database_password%
