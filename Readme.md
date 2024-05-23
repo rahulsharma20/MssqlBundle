@@ -16,7 +16,7 @@ Add the **rsharma20/mssql-bundle** into **composer.json**
     ],
     "require": {
         ....
-        "rsharma20/mssql-bundle": "master-dev"
+        "rahulsharma20/mssql-bundle": "master-dev"
     },
 
 And run
