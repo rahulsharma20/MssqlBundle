@@ -1,21 +1,17 @@
 {
-    "name": "realestateconz/mssql-bundle",
+    "name": "wyzen/mssql-bundle",
     "type": "symfony-bundle",
     "description": "Microsoft SQL Server Bundle for Symfony 2",
     "keywords": ["mssql", "sql server", "driver"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Realestate.co.nz",
-            "homepage": "http://www.realestate.co.nz"
+            "name": "Wyzen Systems Pvt. Ltd.",
+            "homepage": "https://www.go4worldbusiness.com"
         },
         {
             "name": "Ken Golovin",
-            "homepage": "https://github.com/pasinter"
-        },
-        {
-            "name": "Community contributions",
-            "homepage": "https://github.com/realestateconz/MssqlBundle/contributors"
+            "homepage": "https://github.com/rahulsharma20"
         }
     ],
     "require": {
@@ -23,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Realestate\\MssqlBundle": ""
+            "Wyzen\\MssqlBundle": ""
         }
     },
     "target-dir": "Realestate/MssqlBundle"
