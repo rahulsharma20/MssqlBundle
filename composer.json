@@ -22,5 +22,5 @@
             "Wyzen\\MssqlBundle": ""
         }
     },
-    "target-dir": "Realestate/MssqlBundle"
+    "target-dir": "Wyzen/MssqlBundle"
 }
