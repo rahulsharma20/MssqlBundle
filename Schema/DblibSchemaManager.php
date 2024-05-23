@@ -1,6 +1,6 @@
 <?php
 
-namespace Realestate\MssqlBundle\Schema;
+namespace Wyzen\MssqlBundle\Schema;
 
 use Doctrine\DBAL\Schema\SQLServerSchemaManager;
 

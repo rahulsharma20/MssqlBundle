@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace Wyzen\MssqlBundle\Driver\PDODblib;
+namespace Wyzen\MssqlBundle\Driver\PDOOdbc;
 
 use Doctrine\DBAL\Driver\Connection as DriverConnection;
 

@@ -10,7 +10,7 @@
  * @author Scott Morken <scott.morken@pcmail.maricopa.edu>
  */
 
-namespace Wyzen\MssqlBundle\Driver\PDODblib;
+namespace Wyzen\MssqlBundle\Driver\PDOOdbc;
 use Wyzen\MssqlBundle\Platforms\DblibPlatform;
 use Wyzen\MssqlBundle\Schema\DblibSchemaManager;
 
@@ -73,20 +73,14 @@ class Driver implements \Doctrine\DBAL\Driver
 
         } else {
 
-            $dsn = 'dblib:';
+            $dsn = 'odbc:Driver={FreeTDS};';
             if (isset($params['host'])) {
-                $dsn .= 'host=' . $params['host'] . ';';
-            }
-            if (isset($params['port'])) {
-                $dsn .= 'port=' . $params['port'] . ';';
+                $dsn .= 'server=' . $params['host'] . ($params['port'] ? ',' . $params['port'] : '') . ';';
             }
             if (isset($params['dbname'])) {
-                $dsn .= 'dbname=' . $params['dbname'] . ';';
+                $dsn .= 'Database=' . $params['dbname'] . ';';
             }
-            if (isset($params['charset'])) {
-                $dsn .= 'charset=' . $params['charset'] . ';';
-            }
-
+            $dsn .= "PROTOCOL=TCPIP;";
             return $dsn;
         }
     }

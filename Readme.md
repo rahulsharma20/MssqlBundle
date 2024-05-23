@@ -31,7 +31,7 @@ doctrine:
         default_connection:     default
         connections:
             default:
-                driver_class:   Realestate\MssqlBundle\Driver\PDODblib\Driver
+                driver_class:   Wyzen\MssqlBundle\Driver\PDODblib\Driver
                 host:           %database_host%
                 dbname:         %database_prefix%%database_name%
                 user:           %database_user%
@@ -49,7 +49,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Realestate\MssqlBundle\RealestateMssqlBundle(),
+        new Wyzen\MssqlBundle\RealestateMssqlBundle(),
     );
 }
 ```

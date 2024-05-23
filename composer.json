@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "doctrine/common": "~2.2,>=2.2.3"
+        "doctrine/common": "~2.2,>=2.2.3",
+        "doctrine/dbal": "<2.5"
     },
     "autoload": {
         "psr-0": {
