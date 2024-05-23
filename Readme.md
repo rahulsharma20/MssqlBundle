@@ -26,6 +26,7 @@ $ php composer.phar install
 ### Step 2. Configure DBAL's connection to use MssqlBundle
 In config.yml, remove the "driver" param and add "driver_class" instead:
 
+### For PDO dblib
 ```
 doctrine:
     dbal:
@@ -33,6 +34,20 @@ doctrine:
         connections:
             default:
                 driver_class:   Wyzen\MssqlBundle\Driver\PDODblib\Driver
+                host:           %database_host%
+                dbname:         %database_prefix%%database_name%
+                user:           %database_user%
+                password:       %database_password%
+```
+
+### For PDO ODBC
+```
+doctrine:
+    dbal:
+        default_connection:     default
+        connections:
+            default:
+                driver_class:   Wyzen\MssqlBundle\Driver\PDOOdbc\Driver
                 host:           %database_host%
                 dbname:         %database_prefix%%database_name%
                 user:           %database_user%
